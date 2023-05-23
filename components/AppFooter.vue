@@ -3,6 +3,6 @@
 </template>
 <style>
 footer {
-	padding: var(--space-01);
+	padding: var(--size-010);
 }
 </style>

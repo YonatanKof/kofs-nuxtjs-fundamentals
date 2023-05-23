@@ -1,8 +1,15 @@
+<script setup>
+import Navbar from './Navbar.vue';
+</script>
 <template>
-	<header><h1>Header</h1></header>
+	<header>
+		<h1>Header</h1>
+		<Navbar />
+	</header>
 </template>
-<style>
+<style lang="scss">
 header {
-	padding: var(--space-01);
+	padding: var(--size-010);
+    @include flex-center;
 }
 </style>

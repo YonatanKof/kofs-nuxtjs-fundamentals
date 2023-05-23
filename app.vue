@@ -1,24 +1,17 @@
 <template>
-	<div class="main-div">
+	<div>
 		<AppHeader />
 		<span><NuxtPage /></span>
 		<AppFooter />
 	</div>
 </template>
-<style lang="scss">
-:root{
-	--space-01: 1rem;
-}
-// body {
-// 	margin: 0;
-// 	padding: 0;
-// }
-.main-div {
+<style lang="scss" scoped>
+div {
 	height: 100vh;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
 	span {
-		padding: var(--space-01);
+		padding: var(--size-010);
 	}
 }
 </style>
