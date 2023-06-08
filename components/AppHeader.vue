@@ -1,6 +1,4 @@
-<script setup>
-import Navbar from './Navbar.vue';
-</script>
+<script setup></script>
 <template>
 	<header>
 		<h1>Header</h1>
@@ -10,6 +8,6 @@ import Navbar from './Navbar.vue';
 <style lang="scss">
 header {
 	padding: var(--size-010);
-    @include flex-center;
+	@include flex-center;
 }
 </style>
