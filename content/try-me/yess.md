@@ -1,7 +1,8 @@
 ---
 color: red
 feeling: sad
-id: 001
+title: Yess
+id: 7y4n397yn
 ---
 
 # Yess!
