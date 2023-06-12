@@ -4,3 +4,13 @@
 	justify-content: space-between;
 	align-items: center;
 }
+@mixin display-width() {
+	width: 100%;
+	max-width: var(--display-width-normal);
+	margin: 0 auto;
+	padding: var(--size-010);
+}
+
+@mixin linear-gradient($deg, $clr, $int, $end) {
+    background: linear-gradient($deg, rgba($clr, $int) 0%, rgba($clr, 0) $end);
+}

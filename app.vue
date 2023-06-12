@@ -1,17 +1,29 @@
+<script setup lang="ts">
+useHead({
+	title: 'Kof tov',
+	meta: [{ name: 'description', content: 'My amazing site.' }],
+	bodyAttrs: {
+		class: 'test',
+	},
+	script: [{ innerHTML: "console.log('Hello world')" }],
+});
+</script>
+
 <template>
-	<div>
+	<main>
 		<AppHeader />
-		<span><NuxtPage /></span>
+		<div class="main-content-width"><NuxtPage /></div>
 		<AppFooter />
-	</div>
+	</main>
 </template>
 <style lang="scss" scoped>
-div {
+main {
+	margin: 0 auto;
 	height: 100vh;
 	display: grid;
 	grid-template-rows: auto 1fr auto;
-	span {
-		padding: var(--size-010);
-	}
+}
+.main-content-width {
+	@include display-width;
 }
 </style>
