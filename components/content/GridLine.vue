@@ -1,7 +1,7 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
         <g fill="none" fill-rule="evenodd">
-            <g stroke="#979797" stroke-width="2" transform="translate(49)">
+            <g stroke-width="1" transform="translate(49)">
             <line x1="1" x2="1" y2="600"/>
             <line x1="51" x2="51" y2="600"/>
             <line x1="101" x2="101" y2="600"/>
@@ -14,7 +14,7 @@
             <line x1="451" x2="451" y2="600"/>
             <line x1="501" x2="501" y2="600"/>
             </g>
-            <g stroke="#979797" stroke-width="2" transform="translate(0 49)">
+            <g stroke-width="1" transform="translate(0 49)">
             <line x1="300" x2="300" y1="-299" y2="301" transform="rotate(90 300 1)"/>
             <line x1="300" x2="300" y1="-249" y2="351" transform="rotate(90 300 51)"/>
             <line x1="300" x2="300" y1="-199" y2="401" transform="rotate(90 300 101)"/>

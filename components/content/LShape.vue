@@ -299,10 +299,9 @@ $color-l-shape: hsl(35, 85%, 55%);
 	filter: blur(4em);
 }
 .grid-line {
-	background-color: var(--bg-pre);
-	// transform: rotateX(90deg) translateX(-6em) translateZ(-5em);
+	background-color: unset;
 	g {
-		stroke: var(--border-color);
+		stroke: var(--color-sys-dim);
 	}
 }
 .pers-form {
@@ -314,7 +313,7 @@ $color-l-shape: hsl(35, 85%, 55%);
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
-	background-color: var(--bg-code-invert);
+	background-color: var(--color-sys-invert);
 	box-shadow: var(--shadow-md);
 	border-radius: var(--radius);
 	&__label {
