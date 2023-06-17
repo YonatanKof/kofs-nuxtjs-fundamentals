@@ -1,3 +1,4 @@
+// Vars
 :root {
 	--size-001: 0.1rem;
 	--size-002: 0.25rem;
@@ -5,55 +6,36 @@
 	--size-010: 1rem;
 	--size-015: 1.5rem;
 	--size-020: 2rem;
+	--size-030: 3rem;
+	--size-040: 4rem;
+	--size-050: 5rem;
+	--size-060: 6rem;
+	--size-070: 8rem;
+	--size-080: 10rem;
+	--size-100: 12rem;
+
+	--header-height: var(--space-4xl);
 
 	--display-width-normal: 800px;
 
 	--color-sys-dim: hsla(0, 0%, 0%, 0.5);
 	--color-sys-dis: hsla(0, 0%, 0%, 0.1);
 	--color-sys-invert: antiquewhite;
-	
+
 	--bg-primary: var(--color-sys-invert);
-	--radius: var(--size-002);
+	--radius: var(--space-3xs);
 	--content-space: 1rem;
 	--space-md: 1rem;
 	--bg-pre: none;
-	
+
 	--shadow-md: 0px 0.15rem 0.2rem 0 var(--color-sys-dis), 0px 0.3rem 0.4rem 0 var(--color-sys-dis),
 		0px 0.6rem 0.8rem 0 var(--color-sys-dis), 0px 1.2rem 1.6rem 0 var(--color-sys-dis);
 	--font-wight--bolder: bolder;
 	--font-size-2xl: 2em;
 }
-html,
-body,
-p {
-	margin: 0;
-	padding: 0;
-}
+
 body {
 	background-color: var(--color-sys-invert);
-}
-code,
-pre {
-	font-family: monospace;
-	word-spacing: normal;
-	word-break: normal;
-	white-space: break-spaces;
-	word-wrap: normal;
-}
-code {
-	background-color: var(--color-sys-dis);
-	padding: var(--size-001) var(--size-002);
-	border-radius: var(--size-002);
-}
-pre code {
-	background-color: unset;
-	padding: unset;
-	border-radius: unset;
-}
-pre {
-	background-color: var(--color-sys-dis);
-	border-radius: var(--size-002);
-	padding: var(--size-015);
 }
 
 .color-me-red {

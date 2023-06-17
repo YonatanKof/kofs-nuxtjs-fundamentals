@@ -1,0 +1,40 @@
+html,
+body,
+p {
+	font-size: var(--step-0);
+	line-height: var(--step-2);
+}	
+h1 {
+	font-size: var(--step-6);
+}
+h2 {
+	font-size: var(--step-5);
+}
+h3 {
+	font-size: var(--step-4);
+}
+
+code,
+pre {
+	font-size: var(--step--1);
+	font-family: monospace;
+	word-spacing: normal;
+	word-break: normal;
+	white-space: break-spaces;
+	word-wrap: normal;
+}
+code {
+	background-color: var(--color-sys-dis);
+	padding: var(--space-4xs) var(--space-3xs);
+	border-radius: var(--radius);
+}
+pre code {
+	background-color: unset;
+	padding: unset;
+	border-radius: unset;
+}
+pre {
+	background-color: var(--color-sys-dis);
+	border-radius: var(--radius);
+	padding: var(--space-s);
+}

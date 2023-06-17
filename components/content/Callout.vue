@@ -19,7 +19,7 @@ defineProps({
 div {
 	display: flex;
 	background-color: bisque;
-	gap: var(--size-010);
-	padding: var(--size-010);
+	gap: var(--space-s);
+	padding: var(--space-s);
 }
 </style>

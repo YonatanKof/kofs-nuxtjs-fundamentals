@@ -3,12 +3,15 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	// background-color: red;
 }
 @mixin display-width() {
-	width: 100%;
+	
+	// width: 100%;
+	// width: -moz-available;
 	max-width: var(--display-width-normal);
 	margin: 0 auto;
-	padding: var(--size-010);
+	padding-inline: var(--space-m);
 }
 
 @mixin linear-gradient($deg, $clr, $int, $end) {

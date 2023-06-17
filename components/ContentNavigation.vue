@@ -11,11 +11,11 @@ defineProps({
 	<section class="navigation">
 		<div v-for="(item, index) in navigationTree" :key="index">
 			<NuxtLink :to="item._path">
-				<h1>{{ item.title }}</h1>
+				<h3>{{ item.title }}</h3>
 				<p>{{ item.feeling }}</p>
 				<p>{{ item.color }}</p>
 			</NuxtLink>
-			<AppNavigation v-if="item.children" :navigation-tree="item.children" class="sub-navigation" />
+			<!-- <AppNavigation v-if="item.children" :navigation-tree="item.children" class="sub-navigation" /> -->
 		</div>
 	</section>
 </template>
@@ -24,10 +24,10 @@ defineProps({
 section {
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-010);
+	gap: var(--space-s);
 }
 div {
-	padding: var(--size-010);
+	padding: var(--space-s);
 	background-color: aliceblue;
 	box-shadow: var(--shadow-md);
 }

@@ -12,9 +12,10 @@ export default defineNuxtConfig({
 			preprocessorOptions: {
 				scss: {
 					additionalData: `
-						@use "@/assets/styles/_mixins.scss" as *; 
-						@use "@/assets/styles/_try.scss" as *;
-					`,
+						@use '~/assets/styles/reset' as *; 
+						@use '~/assets/styles/mixins' as *; 
+						@use '~/assets/styles/utopia' as *; 
+						@use '~/assets/styles/typography' as *;`,
 				},
 			},
 		},
