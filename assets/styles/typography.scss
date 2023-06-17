@@ -2,8 +2,9 @@ html,
 body,
 p {
 	font-size: var(--step-0);
-	line-height: var(--step-2);
-}	
+	line-height: 1.25;
+	color: var(--color-sys-main);
+}
 h1 {
 	font-size: var(--step-6);
 }
@@ -13,7 +14,36 @@ h2 {
 h3 {
 	font-size: var(--step-4);
 }
-
+h4 {
+	font-size: var(--step-3);
+}
+h5 {
+	font-size: var(--step-2);
+}
+h6 {
+	font-size: var(--step-1);
+}
+:is(h1, h2, h3, h4, h5, h6) a {
+	color: inherit;
+	text-decoration: inherit;
+	&:before {
+		color: var(--color-sys-dim);
+		content: '#';
+		display: inline-block;
+		// font-size: 0.7em;
+		// line-height: 1;
+		margin-left: -0.8em;
+		text-decoration: none;
+		visibility: hidden;
+		width: 0.8em;
+	}
+	&:hover::before {
+		visibility: visible;
+	}
+	&:hover {
+		text-decoration: underline;
+	}
+}
 code,
 pre {
 	font-size: var(--step--1);

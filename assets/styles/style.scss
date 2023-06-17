@@ -18,8 +18,9 @@
 
 	--display-width-normal: 800px;
 
-	--color-sys-dim: hsla(0, 0%, 0%, 0.5);
-	--color-sys-dis: hsla(0, 0%, 0%, 0.1);
+	--color-sys-main: hsl(0, 0%, 10%);
+	--color-sys-dim: hsla(0, 0%, 10%, 0.5);
+	--color-sys-dis: hsla(0, 0%, 10%, 0.1);
 	--color-sys-invert: antiquewhite;
 
 	--bg-primary: var(--color-sys-invert);

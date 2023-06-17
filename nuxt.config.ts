@@ -5,6 +5,11 @@ export default defineNuxtConfig({
 		highlight: {
 			theme: 'github-light',
 		},
+		markdown: {
+			anchorLinks: {
+				depth: 6,
+			},
+		},
 	},
 	css: ['~/assets/styles/style.scss'],
 	vite: {
