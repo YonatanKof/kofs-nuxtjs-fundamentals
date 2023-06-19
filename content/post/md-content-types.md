@@ -23,6 +23,11 @@ Hi all 👋
 Let's see what we have here
 
 # Boring H1 Title
+## Boring H2 Title
+### Boring H3 Title
+#### Boring H4 Title
+##### Boring H5 Title
+###### Boring H6 Title
 
 This post ain't interesting at all 🤷  
 It's just a showcase of *Markdown* styles for this *Gridsome* website.
@@ -231,11 +236,11 @@ It looks bad and right now I don't really know how to manipulate its CSS
 
 !> Don't forget to add `import YouTubePlayer from '~/components/YouTubePlayer.vue` at the top for the `md` file
 
-<YouTubePlayer
+<!-- <YouTubePlayer
     videoId="E86gWQs-ios"
     title="Kill All Hippies"
     >
-</YouTubePlayer>
+</YouTubePlayer> -->
 
 ## Footnotes 
 

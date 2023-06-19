@@ -17,13 +17,13 @@ Using the key attribute lets us give Vue more information so it can correctly re
 
 ### Without lang
 
-`span {padding: var(--size-010);}`
+`span {padding: var(--space-s);}`
 
 `const codeInline: string = 'highlighted code inline'`
 
 ### With lang
 
-`span {padding: var(--size-010);}`{lang="css"}
+`span {padding: var(--space-s);}`{lang="css"}
 
 `const codeInline: string = 'highlighted code inline'`{lang="ts"}
 

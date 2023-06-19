@@ -19,6 +19,8 @@ title: Bulla
 
 In this example we see two filter on the same folder, one is filtering by `color` and the other by `feeling`. Add this to the `script` tag in the page/component you want the filter to happen
 
+### this code 
+
 ```js
 const { data: queryColor } = await useAsyncData('color', () => {
 	return queryContent('try-me').where({ color: 'blond' }).find();
