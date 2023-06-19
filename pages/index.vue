@@ -12,12 +12,16 @@ const { data: queryFeeling } = await useAsyncData('feeling', () => {
 		<h2>Querying the content folder</h2>
 		<h3>Color</h3>
 		<ul v-if="queryColor">
-			<li v-for="color in queryColor" :key="color.title">{{ color.title }}'s color is {{ color.color }} and it feels {{ color.feeling }}</li>
+			<li v-for="color in queryColor" :key="color.title">
+				{{ color.title }}'s color is {{ color.color }} and it feels {{ color.feeling }}
+			</li>
 		</ul>
-		<hr>
+		<hr />
 		<h3>Feeling</h3>
 		<ul v-if="queryFeeling">
-			<li v-for="feel in queryFeeling" :key="feel.id">{{ feel.title }}'s color is {{ feel.color }} and it feels {{ feel.feeling }}</li>
+			<li v-for="feel in queryFeeling" :key="feel.id">
+				{{ feel.title }}'s color is {{ feel.color }} and it feels {{ feel.feeling }}
+			</li>
 		</ul>
 		<h2>Just a simple component</h2>
 		<MyComp>
@@ -25,7 +29,13 @@ const { data: queryFeeling } = await useAsyncData('feeling', () => {
 			<h3>I love you</h3>
 		</MyComp>
 		<h2>Nav to subfolder pages</h2>
-		<nuxt-link to="/kof/kof-tov">kof tov</nuxt-link>
-		<!-- <nuxt-link :to="{`/kof/kof-tov`}">kof tov</nuxt-link> -->
+		<nuxt-link to="/kof/kof-tov">Kof tov page</nuxt-link>
+		<h2>External link</h2>
+		<nuxt-link to="https://yonatankof.com/">Yonatan Kof site</nuxt-link>
 	</main>
 </template>
+<!-- <style lang="scss" scoped>
+main {
+	@include display-width;
+}
+</style> -->
