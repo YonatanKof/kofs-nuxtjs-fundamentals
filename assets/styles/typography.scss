@@ -1,3 +1,7 @@
+@font-face {
+	font-family: 'RecMonoCasual';
+	src: url('/Recursive_VF_1.085--subset-GF_latin_basic.woff2');
+}
 html,
 body,
 p {
@@ -67,4 +71,13 @@ pre {
 	background-color: var(--color-sys-dis);
 	border-radius: var(--radius);
 	padding: var(--space-s);
+}
+a {
+	font-family: RecMonoCasual;
+	// font-style: italic;
+	font-weight: 444;
+	transition: font-weight 0.15s ease-in-out;
+	&:hover {
+		font-weight: 777;
+	}
 }
