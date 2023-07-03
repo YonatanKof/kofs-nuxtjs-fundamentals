@@ -3,6 +3,7 @@
 		<nuxt-link :to="{name: 'index'}">Home</nuxt-link>
 		<nuxt-link :to="{name: 'posts'}">Posts</nuxt-link>
 		<nuxt-link :to="{name: 'designs'}">Designs</nuxt-link>
+		<nuxt-link :to="{name: 'movies'}">Movies</nuxt-link>
 	</nav>
 </template>
 <style lang="scss" scoped>
