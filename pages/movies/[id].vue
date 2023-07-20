@@ -1,8 +1,14 @@
 <script setup>
 const route = useRoute();
-const { data } = await useFetch(`http://www.omdbapi.com/?apikey=fab7e09d&i=${route.params.id}`, {
-	pick: ['Title', 'Poster', 'Director', 'Released', 'Plot', 'Actors'],
+const { data, error } = await useFetch(`http://www.omdbapi.com/?apikey=fab7e09d&i=${route.params.id}`, {
+	pick: ['Title', 'Poster', 'Director', 'Released', 'Plot', 'Actors', 'Error'],
 });
+if (error.value) {
+	showError({ statusCode: 500, statusMessage: 'Oh boy, this is an internal server error' });
+}
+if (data.value.Error === 'Incorrect IMDb ID.') {
+	showError({ statusCode: 404, statusMessage: "Can't find page" });
+}
 </script>
 
 <template>
