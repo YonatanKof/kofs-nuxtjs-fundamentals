@@ -1,11 +1,16 @@
 @font-face {
 	font-family: 'RecMonoCasual';
-	src: url('/Recursive_VF_1.085--subset-GF_latin_basic.woff2');
+	src: url('/fonts/Recursive_VF_1.085--subset-GF_latin_basic.woff2');
+}
+@font-face {
+	font-family: 'CaveatBold';
+	src: url('/fonts/Caveat-Bold.ttf');
 }
 :root {
 	--font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
 		'Segoe UI Emoji', 'Segoe UI Symbol';
 	--font-mono: RecMonoCasual;
+	--font-hand: CaveatBold;
 }
 html,
 body,
@@ -22,6 +27,7 @@ h6 {
 	color: var(--color-sys-main);
 	margin-block-end: var(--space-xs);
 }
+
 h1,
 h2,
 h3,
@@ -31,9 +37,9 @@ h6 {
 	font-weight: 500;
 }
 h1 {
-	font-size: var(--step-6);
+	font-family: var(--font-hand);
+	font-size: var(--step-8);
 	margin-block-end: var(--space-s);
-	font-weight: 600;
 }
 h2 {
 	font-size: var(--step-5);
