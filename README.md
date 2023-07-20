@@ -1,42 +1,11 @@
-# Nuxt 3 Minimal Starter
+# Kofs nuxtjs-fundamentals
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+> [Link to Notion doc 🔗](https://yonatankof.notion.site/Nuxt-js-3-Fundamentals-a7c4e3766af84bcebe004bd4dcb5cf5f?pvs=4)
 
-## Setup
+## Genarate og:image with imagemagick 
 
-Make sure to install the dependencies:
+Example ↓
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
+``` bash
+magick -background antiquewhite -fill "hsl(180, 25%, 15%)" -font CaveatBold -size 1200x630 -pointsize 160 -gravity center label:"Yonatan\nBen Knaan" main.png
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
