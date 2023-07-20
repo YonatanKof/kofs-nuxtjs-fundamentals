@@ -1,7 +1,13 @@
 <script setup lang="ts">
+const config = useRuntimeConfig();
+const siteTitle = `A site by ${config.public.siteOwnerName}`;
 useHead({
-	title: 'Kof tov',
-	meta: [{ name: 'description', content: 'My amazing site.' }],
+	titleTemplate: (titleChunk) => {
+		return titleChunk ? `${titleChunk} - ` + siteTitle : siteTitle;
+	},
+	meta: [
+		{ property: 'author', content: config.public.siteOwnerName },
+	],
 });
 </script>
 

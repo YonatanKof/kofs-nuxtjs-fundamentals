@@ -1,9 +1,24 @@
 <script setup>
+const config = useRuntimeConfig();
 const { data: queryColor } = await useAsyncData('color', () => {
 	return queryContent('try-me').where({ color: 'blond' }).find();
 });
 const { data: queryFeeling } = await useAsyncData('feeling', () => {
 	return queryContent('try-me').where({ feeling: 'cheeky' }).find();
+});
+useSeoMeta({
+	ogType: 'website',
+	description: () => `An amazing site by ${config.public.siteOwnerName}`,
+	ogDescription: () => `An amazing site by ${config.public.siteOwnerName}`,
+	twitterDescription: () => `An amazing site by ${config.public.siteOwnerName}`,
+	image: '/images/main.png',
+	ogImage: '/images/main.png',
+	twitterImage: '/images/main.png',
+	imageAlt: 'Social cover for this site main page',
+	ogImageAlt: 'Social cover for this site main page',
+	twitterImageAlt: 'Social cover for this site main page',
+	twitterCard: 'summary_large_image',
+	twitterSite: '@yonatankof',
 });
 </script>
 <template>
@@ -34,8 +49,3 @@ const { data: queryFeeling } = await useAsyncData('feeling', () => {
 		<nuxt-link to="https://yonatankof.com/">Yonatan Kof site</nuxt-link>
 	</main>
 </template>
-<!-- <style lang="scss" scoped>
-main {
-	@include display-width;
-}
-</style> -->

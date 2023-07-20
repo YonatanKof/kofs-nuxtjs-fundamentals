@@ -9,6 +9,23 @@ if (error.value) {
 if (data.value.Error === 'Incorrect IMDb ID.') {
 	showError({ statusCode: 404, statusMessage: "Can't find page" });
 }
+useHead({
+	title: data.value.Title,
+});
+useSeoMeta({
+	ogType: 'website',
+	description: () => `Movie plot: ${data.value.Plot}`,
+	ogDescription: () => `Movie plot: ${data.value.Plot}`,
+	twitterDescription: () => `Movie plot: ${data.value.Plot}`,
+	image: () => data.value.Poster,
+	ogImage: () => data.value.Poster,
+	twitterImage: () => data.value.Poster,
+	imageAlt: () => `Poster of the movie: ${data.value.Title}`,
+	ogImageAlt: () => `Poster of the movie: ${data.value.Title}`,
+	twitterImageAlt: () => `Poster of the movie: ${data.value.Title}`,
+	twitterCard: 'summary_large_image',
+	twitterSite: '@yonatankof',
+});
 </script>
 
 <template>
