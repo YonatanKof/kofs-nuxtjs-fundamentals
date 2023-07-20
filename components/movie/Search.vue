@@ -1,4 +1,5 @@
 <script setup>
+const config = useRuntimeConfig()
 const query = ref('');
 const movies = ref([]);
 async function search() {
@@ -9,10 +10,11 @@ async function search() {
 	// then we paste in the query value
 	movies.value = Search;
 }
+// search()
 </script>
 <template>
 	<div>
-		<h2>Movies</h2>
+		<h1>Movies</h1>
 		<form @submit.prevent="search">
 			<input type="text" v-model="query" />
 			<button>Search</button>
@@ -23,7 +25,7 @@ async function search() {
 					<h5>{{ movie.Title }}</h5>
 					<h6>{{ movie.Year }}</h6>
 					<img
-						:src="movie.Poster == 'N/A' ? '/missing.svg' : movie.Poster"
+						:src="movie.Poster == 'N/A' ? config.public.missingImg : movie.Poster"
 						:alt="`Cover poster for the movie ${movie.Title}`" />
 				</nuxt-link>
 			</div>
