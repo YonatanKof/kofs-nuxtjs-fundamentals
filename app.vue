@@ -12,17 +12,9 @@ useHead({
 </script>
 
 <template>
-	<main>
-		<AppHeader />
-		<NuxtPage />
-		<AppFooter />
-	</main>
+	<div>
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
+	</div>
 </template>
-<style lang="scss" scoped>
-main {
-	height: 100vh;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	@include display-width;
-}
-</style>
