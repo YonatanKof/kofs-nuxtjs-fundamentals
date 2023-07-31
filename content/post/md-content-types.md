@@ -23,7 +23,7 @@ head:
     - name: 'twitter:card'
       content: 'summary_large_image'
 
-# social_image: ./social-cover-md-content-types.jpg
+cover: "/images/md-content-types.png"
 cover_caption: Two identical text groups, the first as plain text with Markdown syntax, the second formatted and styled
 canonical_url: false
 series: false
@@ -49,6 +49,7 @@ It's just a showcase of *Markdown* styles for this *Gridsome* website.
 
 !> BTW, I'm using [vue-remark](https://www.npmjs.com/package/@gridsome/vue-remark) to transform MD  
 
+![A Cool Image](md-content-types-cover.png)
 ## Humdrum H2 Title
 
 I'm using my own design system, it's a great way to manage design and theming, and doing it with SCSS is easy and fun – relative to a tool like Sketch – which is awesome but tedious. 
