@@ -27,9 +27,9 @@ export default defineNuxtConfig({
 	},
 	runtimeConfig: {
 		// Private keys are only available on the server
-		apiSecret: process.env.NUXT_API_KEY,
 		// Public keys that are exposed to the client
 		public: {
+			apiSecret: process.env.NUXT_API_KEY,
 			siteOwnerName: 'Yonatan Ben Knaan',
 			missingImg: '/missing.svg',
 		},

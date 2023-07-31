@@ -1,6 +1,7 @@
 <script setup>
+const config = useRuntimeConfig();
 const route = useRoute();
-const { data, error } = await useFetch(`https://www.omdbapi.com/?apikey=fab7e09d&i=${route.params.id}`, {
+const { data, error } = await useFetch(`https://www.omdbapi.com/?apikey=${config.public.apiSecret}&i=${route.params.id}`, {
 	pick: ['Title', 'Poster', 'Director', 'Released', 'Plot', 'Actors', 'Error'],
 });
 if (error.value) {

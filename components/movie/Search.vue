@@ -1,10 +1,10 @@
 <script setup>
-const config = useRuntimeConfig()
+const config = useRuntimeConfig();
 const query = ref('');
 const movies = ref([]);
 async function search() {
 	// https://nuxt.com/docs/api/utils/dollarfetch#fetch
-	const { Search } = await $fetch(`https://www.omdbapi.com/?apikey=fab7e09d&s=${query.value}`);
+	const { Search } = await $fetch('https://www.omdbapi.com/?apikey=' + config.public.apiSecret + '&s=' + query.value);
 	// the "s" after the API key is the search by name
 	// see Parameters by search here: http://www.omdbapi.com/
 	// then we paste in the query value
