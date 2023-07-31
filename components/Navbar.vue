@@ -4,6 +4,7 @@
 		<nuxt-link :to="{name: 'posts'}">Posts</nuxt-link>
 		<nuxt-link :to="{name: 'designs'}">Designs</nuxt-link>
 		<nuxt-link :to="{name: 'movies'}">Movies</nuxt-link>
+		<nuxt-link :to="{name: 'login'}">Login</nuxt-link>
 	</nav>
 </template>
 <style lang="scss" scoped>
