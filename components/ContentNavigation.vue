@@ -11,6 +11,7 @@ defineProps({
 	<section class="navigation">
 		<div v-for="(item, index) in navigationTree" :key="index">
 			<NuxtLink :to="item._path">
+				<img :src="item.cover" alt="">
 				<h3>{{ item.title }}</h3>
 				<p>{{ item.feeling }}</p>
 				<p>{{ item.color }}</p>
