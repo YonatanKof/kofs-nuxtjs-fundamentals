@@ -5,7 +5,7 @@
 		<Navbar />
 	</header>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
 header {
 	height: var(--header-height);
 	@include flex-center;
