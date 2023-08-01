@@ -17,6 +17,7 @@
 	--header-height: var(--space-4xl);
 
 	--display-width-normal: 800px;
+	--display-width-narrow: 544px;
 
 	--color-sys-main: hsl(180, 25%, 15%);
 	--color-sys-dim: hsla(0, 0%, 10%, 0.5);
@@ -41,4 +42,8 @@ body {
 
 .color-me-red {
 	color: red;
+}
+img{
+	width: 100%;
+	height: auto;
 }
