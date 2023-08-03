@@ -17,6 +17,11 @@ useSeoMeta({
 	twitterCard: 'summary_large_image',
 	twitterSite: '@yonatankof',
 });
+definePageMeta({
+	pageTransition: {
+		name: 'pop',
+	},
+});
 </script>
 
 <template>
