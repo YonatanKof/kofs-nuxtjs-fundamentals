@@ -7,6 +7,10 @@ definePageMeta({
 <template>
 	<form>
 		<h1>User login</h1>
+		<p>
+			To change the state of this page go to <code>login.vue</code> and change <code>loggedInUser</code> to
+			<code>true</code>
+		</p>
 		<span>
 			<label for="email">Type your email</label>
 			<input type="email" id="email" size="30" required />
