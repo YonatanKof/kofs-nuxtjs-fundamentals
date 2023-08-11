@@ -1,9 +1,12 @@
 <script setup>
 const config = useRuntimeConfig();
 const route = useRoute();
-const { data, error } = await useFetch(`https://www.omdbapi.com/?apikey=${config.public.apiSecret}&i=${route.params.id}`, {
-	pick: ['Title', 'Poster', 'Director', 'Released', 'Plot', 'Actors', 'Error'],
-});
+const { data, error } = await useFetch(
+	`https://www.omdbapi.com/?apikey=${config.public.apiSecret}&i=${route.params.id}`,
+	{
+		pick: ['Title', 'Poster', 'Director', 'Released', 'Plot', 'Actors', 'Error'],
+	}
+);
 if (error.value) {
 	showError({ statusCode: 500, statusMessage: 'Oh boy, this is an internal server error' });
 }
@@ -31,9 +34,13 @@ useSeoMeta({
 
 <template>
 	<main>
-		<h1>{{ data.Title }}</h1>
-		<img :src="data.Poster" :alt="`Cover poster for the movie ${data.Title}`" />
-		<h3>A movie by {{ data.Director }}, released on {{ data.Released }}</h3>
+		<div class="grid">
+			<img :src="data.Poster" :alt="`Cover poster for the movie ${data.Title}`" />
+			<span>
+				<h1>{{ data.Title }}</h1>
+				<h3>A movie by {{ data.Director }}, released on {{ data.Released }}</h3>
+			</span>
+		</div>
 		<h4>Staring: {{ data.Actors }}</h4>
 		<p>{{ data.Plot }}</p>
 		<!-- This shows all the available data -->
@@ -41,4 +48,13 @@ useSeoMeta({
 	</main>
 </template>
 
-<style scoped></style>
+<style scoped>
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: var(--space-s);
+}
+img {
+	border-radius: var(--space-4xs);
+}
+</style>

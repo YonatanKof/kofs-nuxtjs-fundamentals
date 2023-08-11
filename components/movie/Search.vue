@@ -40,5 +40,6 @@ section {
 }
 img {
 	width: 100%;
+	border-radius: var(--space-4xs);
 }
 </style>
