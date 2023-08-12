@@ -44,15 +44,14 @@ Let's see what we have here
 ##### Boring H5 Title
 ###### Boring H6 Title
 
-This post ain't interesting at all 🤷  
-It's just a showcase of *Markdown* styles for this *Gridsome* website.
+This post ain't interesting at all 🤷 It's just to showcase all of the *Markdown* styles for this *Nuxt* website.
 
-!> BTW, I'm using [vue-remark](https://www.npmjs.com/package/@gridsome/vue-remark) to transform MD  
+> BTW, I'm using [vue-remark](https://www.npmjs.com/package/@gridsome/vue-remark) to transform MD  
 
 ![A Cool Image](md-content-types-cover.png)
 ## Humdrum H2 Title
 
-I'm using my own design system, it's a great way to manage design and theming, and doing it with SCSS is easy and fun – relative to a tool like Sketch – which is awesome but tedious. 
+I'm using my own **design system**, it's a great way to manage design and theming, and doing it with SCSS is easy and fun – relative to a tool like Sketch – which is awesome but tedious. 
 
 Please keep an eye over [Kof Design System](https://share.goabstract.com/03c7ec17-6183-4b14-9528-59e90014e79e)
 
