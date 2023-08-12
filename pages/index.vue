@@ -24,6 +24,7 @@ useSeoMeta({
 <template>
 	<main>
 		<h1>Index</h1>
+		<randomCounter page-name="Movies" />
 		<h2>Querying the content folder</h2>
 		<h3>Color</h3>
 		<ul v-if="queryColor">

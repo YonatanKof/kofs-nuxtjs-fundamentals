@@ -25,5 +25,8 @@ definePageMeta({
 </script>
 
 <template>
-	<MovieSearch />
+	<div>
+		<MovieSearch />
+		<randomCounter page-name="Home"/>
+	</div>
 </template>

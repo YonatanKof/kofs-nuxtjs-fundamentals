@@ -1,0 +1,1 @@
+export const useRandomCounter = () => useState('randomCounter', () => Math.round(Math.random() * 1000));
