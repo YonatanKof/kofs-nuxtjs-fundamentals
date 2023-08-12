@@ -2,10 +2,14 @@
 definePageMeta({
 	middleware: ['auth'],
 });
+const loggedInUser = useLoggedInUser();
 </script>
 
 <template>
-	<h1>Page: Admin</h1>
+	<div>
+		<h1>Page: Admin</h1>
+		<NuxtLink v-if="loggedInUser" @click.prevent="loggedInUser = false" to="/">Logout</NuxtLink>
+	</div>
 </template>
 
 <style scoped></style>

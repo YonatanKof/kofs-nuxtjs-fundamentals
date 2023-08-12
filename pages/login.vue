@@ -1,31 +1,24 @@
 <script setup>
+const loggedInUser = useLoggedInUser();
 definePageMeta({
 	layout: 'simple',
 });
+function login() {
+	loggedInUser.value = true;
+	useRouter().push('/admin');
+}
 </script>
 
 <template>
-	<form>
+	<form @submit.prevent="login">
 		<h1>User login</h1>
-		<p>
-			To change the state of this page go to <code>login.vue</code> and change <code>loggedInUser</code> to
-			<code>true</code>
-		</p>
 		<span>
 			<label for="email">Type your email</label>
 			<input type="email" id="email" size="30" required />
 		</span>
 		<span>
 			<label for="password">Type your password</label>
-			<input type="text" name="password" id="password" required />
-		</span>
-		<span class="messageBox">
-			<div id="label-hint">
-				<label for="message">Request</label>
-				<label>Optional</label>
-			</div>
-			<textarea id="message" rows="8" placeholder="My shoes are too tight, and I have forgotten how to dance.">
-			</textarea>
+			<input type="password" name="password" id="password" required />
 		</span>
 		<input type="submit" value="Login" />
 		<nuxt-link :to="{ name: 'index' }" style="text-align: center">Or go back home</nuxt-link>
