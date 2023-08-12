@@ -8,7 +8,7 @@ const loggedInUser = useLoggedInUser();
 		<nuxt-link :to="{name: 'designs'}">Designs</nuxt-link>
 		<nuxt-link :to="{name: 'movies'}">Movies</nuxt-link>
 		<NuxtLink v-if="!loggedInUser" to="/login">Login</NuxtLink>
-		<NuxtLink v-if="loggedInUser" to="/admin">Admin</NuxtLink>
+		<NuxtLink v-if="loggedInUser" to="/user">User</NuxtLink>
 	</nav>
 </template>
 <style lang="scss" scoped>

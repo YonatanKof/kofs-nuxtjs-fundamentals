@@ -5,7 +5,7 @@ definePageMeta({
 });
 function login() {
 	loggedInUser.value = true;
-	useRouter().push('/admin');
+	useRouter().push('/user');
 }
 </script>
 

@@ -7,7 +7,7 @@ const loggedInUser = useLoggedInUser();
 
 <template>
 	<div>
-		<h1>Page: Admin</h1>
+		<h1>The user page!</h1>
 		<NuxtLink v-if="loggedInUser" @click.prevent="loggedInUser = false" to="/">Logout</NuxtLink>
 	</div>
 </template>
