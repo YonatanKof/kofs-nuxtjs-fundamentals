@@ -24,9 +24,13 @@ async function search() {
 				<nuxt-link :to="{ name: 'movies-id', params: { id: movie.imdbID } }">
 					<h5>{{ movie.Title }}</h5>
 					<h6>{{ movie.Year }}</h6>
-					<img
+					<NuxtImg
+						width="256"
+						format="webp"
+						loading="lazy"
 						:src="movie.Poster == 'N/A' ? config.public.missingImg : movie.Poster"
-						:alt="`Cover poster for the movie ${movie.Title}`" />
+						:alt="`Cover poster for the movie ${movie.Title}`"
+					/>
 				</nuxt-link>
 			</div>
 		</section>
@@ -40,6 +44,5 @@ section {
 }
 img {
 	width: 100%;
-	border-radius: var(--space-4xs);
 }
 </style>

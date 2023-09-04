@@ -35,7 +35,7 @@ useSeoMeta({
 <template>
 	<main>
 		<div class="grid">
-			<img :src="data.Poster" :alt="`Cover poster for the movie ${data.Title}`" />
+			<NuxtImg width="256" format="webp" :src="data.Poster" :alt="`Cover poster for the movie ${data.Title}`" />
 			<span>
 				<h1>{{ data.Title }}</h1>
 				<h3>A movie by {{ data.Director }}, released on {{ data.Released }}</h3>
@@ -53,8 +53,5 @@ useSeoMeta({
 	display: grid;
 	grid-template-columns: 1fr 2fr;
 	gap: var(--space-s);
-}
-img {
-	border-radius: var(--space-4xs);
 }
 </style>
