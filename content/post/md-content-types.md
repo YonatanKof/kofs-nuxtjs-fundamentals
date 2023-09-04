@@ -59,12 +59,6 @@ Please keep an eye over [Kof Design System](https://share.goabstract.com/03c7ec1
 
 Because of vue-remark I can add Vue components into my markdown. Like this 3D viewer/controller from an article about Perspective I'm writing:
 
-<LShape 
-:show-comp-scale="true" 
-:show-comp-pres="true"
-:show-comp-rot-y="true"
-:show-comp-axle-y="true"
-/>
 
 #### Monotonous H4 Title
 
@@ -207,7 +201,12 @@ export default {
     }
 };
 ```
-![image](~/assets/images/Yonatan_Ben-Knaan-Squere.jpg)
+#### In order to have the image caption right there should be 2 things:
+
+- No space between the image and the caption 
+- The caption should have an `*`, i.e be an `em` tag
+> 
+![image](md-content-types/Yonatan_Kof.png)
 *Now that's one good looking Kof*
 
 `Use code in your Markdown file.`
@@ -250,6 +249,7 @@ It looks bad and right now I don't really know how to manipulate its CSS
 ### Add a Youtube Embed
 
 !> Don't forget to add `import YouTubePlayer from '~/components/YouTubePlayer.vue` at the top for the `md` file
+
 
 <!-- <YouTubePlayer
     videoId="E86gWQs-ios"
