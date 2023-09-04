@@ -43,7 +43,15 @@ body {
 .color-me-red {
 	color: red;
 }
-img{
+img {
 	width: 100%;
 	height: auto;
+	border-radius: var(--space-4xs);
+}
+
+img ~ em {
+	color: var(--color-sys-dim);
+	font-size: var(--step--1);
+	padding-inline-start: var(--space-3xs);
+	border-inline-start: var(--color-sys-dim) solid var(--space-4xs);
 }
