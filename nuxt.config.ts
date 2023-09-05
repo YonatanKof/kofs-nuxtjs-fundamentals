@@ -46,5 +46,6 @@ export default defineNuxtConfig({
 	},
 	image: {
 		domains: ['m.media-amazon.com'],
+		provider: 'netlify',
 	},
 });
