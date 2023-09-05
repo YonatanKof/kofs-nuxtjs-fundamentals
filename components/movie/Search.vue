@@ -26,7 +26,6 @@ async function search() {
 					<h6>{{ movie.Year }}</h6>
 					<NuxtImg
 						width="256"
-						format="webp"
 						loading="lazy"
 						:src="movie.Poster == 'N/A' ? config.public.missingImg : movie.Poster"
 						:alt="`Cover poster for the movie ${movie.Title}`"
