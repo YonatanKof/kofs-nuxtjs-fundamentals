@@ -24,8 +24,7 @@ async function search() {
 				<nuxt-link :to="{ name: 'movies-id', params: { id: movie.imdbID } }">
 					<h5>{{ movie.Title }}</h5>
 					<h6>{{ movie.Year }}</h6>
-					<NuxtImg
-						width="256"
+					<img
 						loading="lazy"
 						:src="movie.Poster == 'N/A' ? config.public.missingImg : movie.Poster"
 						:alt="`Cover poster for the movie ${movie.Title}`"
