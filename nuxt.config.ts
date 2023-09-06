@@ -44,7 +44,7 @@ export default defineNuxtConfig({
 			mode: 'out-in', // default
 		},
 	},
-	image: {
-		domains: ['m.media-amazon.com'],
-	},
+	// image: {
+	// 	domains: ['m.media-amazon.com'],
+	// },
 });
