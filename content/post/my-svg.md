@@ -15,7 +15,8 @@ feeling: mad
 id: 004
 --- 
 
-::LShape{:show-comp-scale="true" :show-comp-pres="true" :show-comp-rot-y="true" :show-comp-axle-y="true"}
+::LShape
+::
 
 > SVGs are **nice**  
 Inline SVGs are **nicer**  

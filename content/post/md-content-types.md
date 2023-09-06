@@ -44,6 +44,9 @@ Let's see what we have here
 ##### Boring H5 Title
 ###### Boring H6 Title
 
+::LShape
+::
+
 This post ain't interesting at all 🤷 It's just to showcase all of the *Markdown* styles for this *Nuxt* website.
 
 > BTW, I'm using [vue-remark](https://www.npmjs.com/package/@gridsome/vue-remark) to transform MD  
@@ -251,11 +254,8 @@ It looks bad and right now I don't really know how to manipulate its CSS
 !> Don't forget to add `import YouTubePlayer from '~/components/YouTubePlayer.vue` at the top for the `md` file
 
 
-<!-- <YouTubePlayer
-    videoId="E86gWQs-ios"
-    title="Kill All Hippies"
-    >
-</YouTubePlayer> -->
+::YouTubePlayer{videoId="E86gWQs-ios" title="Kill All Hippies"}
+::
 
 ## Footnotes 
 
