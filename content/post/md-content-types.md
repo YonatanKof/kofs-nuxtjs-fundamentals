@@ -23,7 +23,7 @@ head:
     - name: 'twitter:card'
       content: 'summary_large_image'
 
-cover: "/images/md-content-types.png"
+cover_image: "/images/md-content-types.png"
 cover_caption: Two identical text groups, the first as plain text with Markdown syntax, the second formatted and styled
 canonical_url: false
 series: false
