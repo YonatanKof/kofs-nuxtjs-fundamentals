@@ -14,6 +14,6 @@ const loggedInUser = useLoggedInUser();
 <style lang="scss" scoped>
 nav {
 	@include flex-center;
-	gap: var(--size-010);
+	gap: var(--space-xs);
 }
 </style>

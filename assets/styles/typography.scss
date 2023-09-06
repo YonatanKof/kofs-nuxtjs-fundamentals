@@ -99,13 +99,13 @@ a {
 code {
 	background-color: var(--color-sys-dis);
 	padding: var(--space-4xs) var(--space-3xs);
-	border-radius: var(--radius);
+	border-radius: var(--border-radius);
 	margin-block-end: var(--space-s);
 	font-size: 80%;
 }
 pre {
 	background-color: var(--color-sys-dis);
-	border-radius: var(--radius);
+	border-radius: var(--border-radius);
 	padding: var(--space-s);
 	margin-block-end: var(--space-xs);
 }

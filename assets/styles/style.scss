@@ -1,20 +1,7 @@
 // Vars
 :root {
-	--size-001: 0.1rem;
-	--size-002: 0.25rem;
-	--size-005: 0.5rem;
-	--size-010: 1rem;
-	--size-015: 1.5rem;
-	--size-020: 2rem;
-	--size-030: 3rem;
-	--size-040: 4rem;
-	--size-050: 5rem;
-	--size-060: 6rem;
-	--size-070: 8rem;
-	--size-080: 10rem;
-	--size-100: 12rem;
-
 	--header-height: var(--space-4xl);
+	--border-radius: var(--space-3xs);
 
 	--display-width-normal: 800px;
 	--display-width-narrow: 544px;
@@ -25,7 +12,6 @@
 	--color-sys-invert: antiquewhite;
 
 	--bg-primary: var(--color-sys-invert);
-	--radius: var(--space-3xs);
 	--content-space: 1rem;
 	--space-md: 1rem;
 	--bg-pre: none;
@@ -46,7 +32,7 @@ body {
 img {
 	width: 100%;
 	height: auto;
-	border-radius: var(--space-4xs);
+	border-radius: var(--border-radius);
 }
 
 img ~ em {
