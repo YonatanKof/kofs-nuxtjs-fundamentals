@@ -2,6 +2,8 @@
 
 > [Link to Notion doc 🔗](https://yonatankof.notion.site/Nuxt-js-3-Fundamentals-a7c4e3766af84bcebe004bd4dcb5cf5f?pvs=4)
 
+> [Link to Live version 🔗](https://kofs-nuxtjs-fundamentals.netlify.app)
+
 ## Genarate og:image with imagemagick 
 
 Example ↓
