@@ -23,6 +23,6 @@ const { data: navigation } = await useAsyncData('equal', () => {
 <template>
 	<div>
 		<h1>Designs</h1>
-		<ContentNavigation :navigation-tree="navigation" />
+		<ContentDesign :navigation-design="navigation" has-columns/>
 	</div>
 </template>
