@@ -34,6 +34,9 @@ export default defineNuxtConfig({
 			missingImg: '/missing.svg',
 		},
 	},
+	// image: {
+	// 	domains: ['m.media-amazon.com'],
+	// },
 	app: {
 		pageTransition: {
 			name: 'page',
@@ -44,7 +47,7 @@ export default defineNuxtConfig({
 			mode: 'out-in', // default
 		},
 	},
-	// image: {
-	// 	domains: ['m.media-amazon.com'],
-	// },
+	devtools: {
+		enabled: true,
+	},
 });
