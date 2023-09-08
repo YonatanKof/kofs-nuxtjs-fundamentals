@@ -14,19 +14,18 @@ canonical_url: false
 series: false
 ---
 
-<!-- import YouTubePlayer from '~/components/YouTubePlayer.vue' -->
+#### *All the love in the world* by NIN
+
+Oh boy, do I love this song
 
 ![All the jagged edges disappear](all_the_love/all-the-wide-guns.jpg)
 *All the jagged edges disappear*
 
-![Colors all look brighter when you're near](all_the_love/just-a-gun.jpg)
+![The stars are all afire in the sky](all_the_love/all-the-guns.jpg)
 *Colors all look brighter when you're near*
 
-![The stars are all afire in the sky](all_the_love/all-the-guns.jpg)
+![Colors all look brighter when you're near](all_the_love/just-a-gun.jpg)
 *The stars are all afire in the sky*
-
-And the line is obviously taken form the song "All the love in the world" by NIN.  
-Oh boy, do I love this song
 
 ::YouTubePlayer{videoId="BdzWnFqSMMU" title="All The Love In The World"}
 ::
