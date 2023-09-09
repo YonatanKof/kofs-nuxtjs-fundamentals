@@ -1,4 +1,10 @@
 <script setup>
+import { useDateFormat, useNow, formatDate } from '@vueuse/core';
+
+const formatted = (date) => {
+	return useDateFormat(date, 'YYYY-MM-DD');
+};
+
 defineProps({
 	navigationDesign: {
 		type: Array,
@@ -18,12 +24,13 @@ defineProps({
 </script>
 
 <template>
-	<section :class="{columns: hasColumns , flex: hasFlex}">
+	<section :class="{ columns: hasColumns, flex: hasFlex }">
 		<div v-for="(item, index) in navigationDesign" :key="index">
 			<NuxtLink :to="item._path" style="text-decoration: none">
 				<img :src="item.cover_image" alt="" />
 				<h3>{{ item.title }}</h3>
 				<p style="font-weight: normal" v-if="item.description">{{ item.description }}</p>
+				<p style="font-weight: normal" v-if="item.date">{{ formatted(item.date) }}</p>
 			</NuxtLink>
 		</div>
 	</section>
@@ -56,5 +63,4 @@ a {
 	inset: 0;
 	display: block;
 }
-
 </style>
