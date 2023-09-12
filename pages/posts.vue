@@ -24,6 +24,6 @@ const { data: navigation } = await useAsyncData('equal', () => {
 <template>
 	<div>
 		<h1>Posts</h1>
-		<ContentNavigation :navigation-tree="navigation" />
+		<ContentPost :navigation-tree="navigation" />
 	</div>
 </template>
