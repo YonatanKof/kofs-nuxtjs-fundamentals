@@ -17,13 +17,13 @@ useSeoMeta({
 	twitterCard: 'summary_large_image',
 	twitterSite: '@yonatankof',
 });
-const { data: navigation } = await useAsyncData('equal', () => {
+const { data } = await useAsyncData('equal', () => {
 	return queryContent('post').where({}).find();
 });
 </script>
 <template>
 	<div>
 		<h1>Posts</h1>
-		<ContentPost :navigation-tree="navigation" />
+		<ContentList :navigation="data" has-flex />
 	</div>
 </template>

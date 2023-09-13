@@ -16,13 +16,35 @@ useSeoMeta({
 	twitterImageAlt: 'Social cover for this site designs page',
 	twitterCard: 'summary_large_image',
 });
-const { data: navigation } = await useAsyncData('equal', () => {
-	return queryContent('design').where({}).find();
+
+// Find the number of blogs present
+const itemCountLimit = 4;
+const { data } = await useAsyncData(`content-/design`, async () => {
+	const _designs = await queryContent('/design').only('title').find();
+	return Math.ceil(_designs.length / itemCountLimit);
 });
 </script>
 <template>
 	<div>
 		<h1>Designs</h1>
-		<ContentDesign :navigation-design="navigation" has-columns/>
+		<ContentQuery
+			path="/design"
+			:where="{}"
+			:sort="{
+				date: -1,
+			}"
+			:limit="itemCountLimit"
+			v-slot="{ data }"
+		>
+			<ContentList :navigation="data" has-columns />
+		</ContentQuery>
+		<Pagination
+			v-if="data > 1"
+			:currentPage="1"
+			:totalPages="data"
+			:nextPage="data > 1"
+			baseUrl="/design/"
+			pageUrl="/design/page/"
+		/>
 	</div>
 </template>
