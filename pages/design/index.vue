@@ -25,6 +25,7 @@ const { data } = await useAsyncData(`content-/design`, async () => {
 });
 </script>
 <template>
+	<!-- This is the design list initial page -->
 	<div>
 		<h1>Designs</h1>
 		<ContentQuery

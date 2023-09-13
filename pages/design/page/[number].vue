@@ -27,7 +27,7 @@ try {
 
 <template>
 	<main>
-		<!-- Query for the given blog page number -->
+		<!-- This is the design list with page number -->
 		<ContentQuery
 			path="/design"
 			:only="['title', 'date', '_path', 'cover_image']"
