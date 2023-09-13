@@ -38,7 +38,7 @@ try {
 			:limit="itemCountLimit"
 		>
 			<template v-slot="{ data }">
-				<ContentList :navigation="data" has-columns />
+				<ListContent :navigation="data" has-columns />
 				<ContentQuery path="/design" :only="['title']">
 					<template v-slot="{ data }">
 						<Pagination

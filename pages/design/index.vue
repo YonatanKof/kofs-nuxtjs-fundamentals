@@ -37,7 +37,7 @@ const { data } = await useAsyncData(`content-/design`, async () => {
 			:limit="itemCountLimit"
 			v-slot="{ data }"
 		>
-			<ContentList :navigation="data" has-columns />
+			<ListContent :navigation="data" has-columns />
 		</ContentQuery>
 		<Pagination
 			v-if="data > 1"
