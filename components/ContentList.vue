@@ -1,12 +1,12 @@
 <script setup>
-import { useDateFormat, useNow, formatDate } from '@vueuse/core';
+import { useDateFormat } from '@vueuse/core';
 
 const formatted = (date) => {
 	return useDateFormat(date, 'YYYY-MM-DD');
 };
 
 defineProps({
-	navigationDesign: {
+	navigation: {
 		type: Array,
 		default: () => [],
 	},
@@ -25,7 +25,7 @@ defineProps({
 
 <template>
 	<section :class="{ columns: hasColumns, flex: hasFlex }">
-		<div v-for="(item, index) in navigationDesign" :key="index">
+		<div v-for="(item, index) in navigation" :key="index">
 			<NuxtLink :to="item._path" style="text-decoration: none">
 				<img :src="item.cover_image" alt="" />
 				<h3>{{ item.title }}</h3>
